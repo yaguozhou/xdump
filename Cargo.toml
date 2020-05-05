@@ -10,3 +10,13 @@ description = "display file contents in hexadecimal, decimal, octal, binary"
 [dependencies]
 colored = "1.9"
 clap = "2.33"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+# https://github.com/johnthagen/min-sized-rust
+opt-level = 'z'     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = 'abort'     #
