@@ -67,14 +67,14 @@ fn main() {
     }
 }
 
-fn dump_all(s: &String) {
+fn dump_all(s: &str) {
     dump(s, Type::HEX);
     dump(s, Type::DEC);
     dump(s, Type::OCT);
     dump(s, Type::BIN);
 }
 
-fn dump(s: &String, t: Type) {
+fn dump(s: &str, t: Type) {
     println!("{}\n{}", t.value(), "-".repeat(t.value().len()));
     let len = match t {
         Type::BIN => SUBSTR_LEN_BINARY,
@@ -87,7 +87,7 @@ fn dump(s: &String, t: Type) {
     println!();
 }
 
-fn split(s: &String, size: usize) -> Vec<String> {
+fn split(s: &str, size: usize) -> Vec<String> {
     let mut result = Vec::new();
 
     let len = s.len();
