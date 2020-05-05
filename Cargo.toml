@@ -1,0 +1,12 @@
+[package]
+name = "xdump"
+version = "0.1.0"
+authors = ["abstractsuperman <abstractsuperman@126.com>"]
+edition = "2018"
+description = "display file contents in hexadecimal, decimal, octal, binary"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+colored = "1.9"
+clap = "2.33"
