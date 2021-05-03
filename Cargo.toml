@@ -1,7 +1,7 @@
 [package]
 name = "xdump"
 version = "0.1.0"
-authors = ["abstractsuperman <abstractsuperman@126.com>"]
+authors = ["Yaguo Zhou <yaguozhou@126.com>"]
 edition = "2018"
 description = "display file contents in hexadecimal, decimal, octal, binary"
 

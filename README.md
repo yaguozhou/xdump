@@ -1,4 +1,4 @@
-# xdump ![Continuous integration](https://github.com/abstractsuperman/xdump/workflows/Continuous%20integration/badge.svg)
+# xdump
 
 xdump is a tool to display file contents in hexadecimal, decimal, octal, binary
 
@@ -18,7 +18,7 @@ steps:
     registry = "https://mirrors.ustc.edu.cn/crates.io-index"
     EOF
     ```
-3. git clone https://github.com/abstractsuperman/xdump.git
+3. git clone https://github.com/yaguozhou/xdump.git
 4. bash install_on_local.sh
 5. chmod +x ~/.cargo/bin/xdump
 6. execute `xdump --help` and enjoy.
